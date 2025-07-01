@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Web Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Calculadora</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Aula LuizTools basics</h2>
+                <p>Esta é uma calculadora simples feita com HTML, CSS e JavaScript.</p>
+                <p>Você pode realizar operações básicas como adição, subtração, multiplicação e divisão.</p>
+            </section>
+            <section>
+                <div>
+                    <input type="text" value="0" id="display" disabled style="width: 140px"/>
+                </div>
+                <div>
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="7" />
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="8" />
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="9" />
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="+" />
+                </div>  
+                <div>
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="4" />
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="5" />
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="6" />
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="-" />
+                </div>  
+                <div>
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="1" />
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="2" />
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="3" />
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="*" />
+                </div>  
+                <div>
+                    <input type="button" class="btn" onClick="calculate()" value="=" />
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="0" />
+                    <input type="button" class="btn" onClick="clearDisplay()" value="C" />
+                    <input type="button" class="btn" onClick="updateDisplay(this.value)" value="/" />
+                </div>  
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 My Web Page</p>
+        </footer>
+    </body>
+</html>
